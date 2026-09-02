@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>青パパイヤとは？ | Aces And Eights</title>
+<meta name="description" content="機能性野菜として注目されている「青パパイヤ」は家庭菜園でも簡単に栽培可能。ナゼここまで注目されるのか？その効能について解説します。">
+<link rel="icon" type="image/png" href="images/a40240_9505b2e930d043dbb5f194c75a3b9950.png">
+<link rel="apple-touch-icon" href="images/a40240_9505b2e930d043dbb5f194c75a3b9950.png">
+<style>
+  :root {
+    --navy: #243c64;
+    --navy-dark: #1a2c4a;
+    --accent: #3d65a9;
+    --bg: #7f97cc;
+    --footer-bg: #cfdbee;
+    --text: #222222;
+    --max-width: 980px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+    color: var(--text);
+    line-height: 1.8;
+    background-color: var(--bg);
+  }
+  main {
+    background: #fff;
+    border-radius: 8px;
+  }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+
+  header.site-header {
+    background: var(--navy);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .logo img { width: 44px; height: 44px; }
+  nav.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 18px;
+  }
+  nav.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 4px;
+    white-space: nowrap;
+  }
+  nav.main-nav a.active,
+  nav.main-nav a:hover {
+    border-bottom: 2px solid #fff;
+  }
+
+  .hero {
+    width: 100%;
+    aspect-ratio: 980 / 349;
+    background-image: url('images/a40240_819ff63c014d41398b89f4faf1aa06e4.avif');
+    background-size: cover;
+    background-position: center;
+  }
+
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+
+  h2.section-title {
+    font-size: 34px;
+    color: var(--navy);
+    text-align: center;
+    margin: 60px 0 30px;
+    position: relative;
+  }
+  h2.section-title:first-of-type { margin-top: 0; }
+
+  .lead-block {
+    background: var(--accent);
+    color: #fff;
+    border-radius: 30px;
+    padding: 24px 32px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .content-block { font-size: 16px; }
+  .content-block p { margin: 0 0 1em; }
+  .content-block a { text-decoration: underline; }
+
+  .feature-box {
+    border: 4px solid #a9c6ec;
+    box-shadow: 12px 12px 0 rgba(36,60,100,0.3);
+    padding: 24px 30px;
+    margin: 30px 0;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 5px solid var(--accent);
+    margin: 40px 0;
+  }
+
+  ul.point-list { padding-left: 1.3em; font-size: 20px; color: #333; }
+  ul.point-list li { margin-bottom: 10px; }
+  .highlight { color: #e607cf; }
+
+  .qa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .qa-card {
+    border: 4px solid #a9c6ec;
+    box-shadow: 12px 12px 0 rgba(36,60,100,0.3);
+    overflow: hidden;
+  }
+  .qa-question {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+  }
+  .qa-answer { padding: 20px; font-size: 15px; }
+  .qa-answer a { text-decoration: underline; }
+
+  footer.site-footer {
+    background: var(--footer-bg);
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .footer-sns { display: flex; justify-content: center; gap: 10px; margin-bottom: 12px; }
+  .footer-sns img { width: 40px; height: 40px; }
+  footer.site-footer p { font-size: 13px; color: var(--navy); margin: 0; }
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #e607cf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 200;
+  text-decoration: none;
+}
+.back-to-top svg { width: 20px; height: 20px; }
+.page-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--navy);
+}
+.page-link-btn svg { width: 16px; height: 16px; }
+.dl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px;
+  padding: 10px 20px;
+  background: #3d65a9;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.dl-btn svg { width: 14px; height: 14px; }
+</style>
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <img src="images/a40240_9505b2e930d043dbb5f194c75a3b9950.png" alt="Aces And Eights ロゴ">
+      Aces And Eights™
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" class="active">青パパイヤとは？</a>
+      <a href="plant-physiology.html">植物生理と生態</a>
+      <a href="grow-guide.html">栽培方法</a>
+      <a href="home-garden.html">家庭菜園向け</a>
+      <a href="variety.html">品種紹介</a>
+      <a href="pop.html">POPダウンロード</a>
+      <a href="about.html">A&8について</a>
+      <a href="team.html">チーム</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero"></div>
+
+<main>
+
+  <h2 class="section-title">青パパイヤとは？</h2>
+
+  <div class="lead-block">
+    青パパイヤはフルーツパパイヤの「未熟果」黄色く熟してフルーツになる前、緑の果実を野菜として利用します。同じ品種でも収穫時期の違いで使い分けます。
+    <br><br>
+    日本ではフルーツと区別するため「青パパイヤ」または「野菜パパイヤ」と呼ばれています。海外では"Green Papaya"と呼ぶのが一般的です。
+    <br><br>
+    "パパイヤ" "パパイア"どちらが正しいの？<br>
+    どちらが正解・不正解という事はありません。園芸学会では「パパイア」を、農業界では「パパイヤ」を正式表記としています。
+  </div>
+
+  <div class="content-block">
+    <p>中南米・東南アジアを中心に、日本では沖縄県・鹿児島県(徳之島)などで日常的に使われる"野菜"です。パパイヤをフルーツだけではなく野菜として利用している国は意外と沢山あります。</p>
+
+    <p>青パパイヤには良くも悪くも特徴ある味がありません、言うなればウリのような作物で、どんな味付けにも染まるため、サラダはもちろん、炒め物・煮物・お漬物など、クセがないので幅広い料理に利用できます。</p>
+
+    <p>近年はパクチーブームなどの影響でアジア料理もより身近になりつつあり、青パパイヤも一部スーパーの野菜売り場で見かけるようになり、本州での生産面積の増加に伴って取り扱う店舗も増えています。</p>
+
+    <p>ご当地ブランドとしての六次化も各地で盛んに行われており「青パパイヤカレー」「青パパイヤ茶」「青パパイヤ石鹸」など、加工品も数多く販売されています。</p>
+  </div>
+
+  <hr class="divider">
+
+  <h2 class="section-title">パパイン酵素に注目</h2>
+
+  <div class="content-block">
+    <p>近年青パパイヤの持つ酵素成分が注目を集めています！果実に含まれるたんぱく質分解酵素が消化促進や老化の原因となる活性酵素の働きを阻害するなど、生活習慣病対策やダイエットに効果を期待されており、普段の食生活に取り入れる動きが活発になっています。</p>
+
+    <p>青パパイヤ果実に含まれる酵素「パパイン」はタンパク質分解酵素であるシステインプロテアーゼに分類される酵素であることは古くから知られています。プラス、青パパイヤにはその他の酵素成分も機能していることが分かっています。</p>
+
+    <div class="feature-box" style="background:#4270ba; color:#fff;">
+      <ul style="list-style:none; padding:0; margin:0; font-weight:bold; font-size:20px;">
+        <li>プロテアーゼ　：　タンパク質分解酵素</li>
+        <li>リパーゼ　　　：　脂肪分解酵素</li>
+        <li>アミラーゼ　　：　糖質(デンプン)分解酵素</li>
+      </ul>
+    </div>
+
+    <p>今でこそ酵素成分などで注目を集める青パパイヤですが、沖縄県では古くから出産後の女性や病み上がりの人に食べさせる習慣があり、沖縄県人の常識となっています。</p>
+
+    <p>主な栽培地域である東南アジアや中南米でも古来から滋養強壮効果が広く知られ、未熟な野菜だけでなく、フルーツもメディカルフードとして広く根付いています。パパイン酵素は医薬品原料や化粧品原料としての利用も歴史は古く、海外にはパパイン抽出用産地もあり、粉末加工され流通しています。</p>
+  </div>
+
+  <hr class="divider">
+
+  <h2 class="section-title">本州栽培が注目されたワケとは？</h2>
+
+  <div class="content-block">
+    <p>ここ5~6年、特に本州での青パパイヤ栽培が注目されたのにはいくつか理由があります。</p>
+    <ul class="point-list">
+      <li>果実の持つ機能性が現代人の健康を意識した食生活にマッチしている点。</li>
+      <li>栽培過程で目立った<span class="highlight">病虫害</span>や<span class="highlight">獣害</span>の報告が無い点。</li>
+      <li>初期投資が不要である。</li>
+    </ul>
+
+    <p>獣害については既に他の作物で被害がある中山間地での栽培地から食害の報告が無く、動物（シカ・イノシシなど）が興味を示さないと言われています。</p>
+    <p>また目立った病害虫が発生しない点も、栽培において優位性が高く、南は九州から、北は南東北まで、規模の大小はありますが栽培者が増えました。</p>
+    <p>なぜ獣害が無いのか？について詳しくは<a href="plant-physiology.html">生理生態のページ</a>をご覧ください。</p>
+  </div>
+
+  <hr class="divider">
+
+  <h2 class="section-title">本州栽培Q&A</h2>
+  <p style="text-align:center; font-size:18px;">これから栽培を始めようという方からよくいただく質問をまとめました。</p>
+
+  <div class="qa-grid">
+    <div class="qa-card">
+      <div class="qa-question" style="background:#75937f;">フルーツとして収穫したい！</div>
+      <div class="qa-answer">
+        <p>残念ですが本州の「春植え1年1作」では開花後の登熟日数(積算温度)が足りず、そのステージまで達しません。</p>
+        <p>野菜と割り切って栽培してください。（温度確保が出来る加温温室があれば可能です）</p>
+      </div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-question" style="background:#3d97a9;">1株から何個収穫できる？</div>
+      <div class="qa-answer">
+        <p>路地栽培で20~30個（700g程度）／コンテナ栽培で5~10個(300g程度)</p>
+        <p>施肥管理次第ですが、路地・畑作1株当たり50～60個の収穫実績があります。標準収穫量は<a href="grow-guide.html">栽培ページ</a>に解説しています。</p>
+      </div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-question" style="background:#25c4a7;">1本だけ植えても実はなるの？</div>
+      <div class="qa-answer">
+        <p>1本でも実はなります。元来パパイヤは雌雄別性の植物ですが、現在流通している品種のほとんどは両性(同性)品種のため、1本で結実します。パパイヤの性やメカニズムに関して詳しくは<a href="plant-physiology.html">生理生態のページ</a>をご覧ください。</p>
+      </div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-question" style="background:#4270ba;">冬越しは可能？</div>
+      <div class="qa-answer">
+        <p>生育適温は23~28℃、本州栽培では11月には生育は止まり、12月には枯れます。学術的には18℃で生育緩慢になり、14℃以下で出葉・開花が停止、5℃以下で枯れる。熱帯・亜熱帯の植物と定義されています。</p>
+      </div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-question" style="background:#539b3d;">どの位の大きさの木になる？</div>
+      <div class="qa-answer">
+        <p>本州では4月末定植で10月には2m強の高さとなります。（着果位置はひざ～首）</p>
+        <p>本州向け品種はより節間が短く、低段から着果し、樹高の低いタイプを提供しています。<a href="variety.html">ラインナップは品種紹介へ！</a></p>
+      </div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-question" style="background:#a93d7e;">後処理が大変？</div>
+      <div class="qa-answer">
+        <p>パパイヤは樹木ではありません。浅根で幹の中心部は空洞、収穫直後の水分を多く含んだ状態が最も脆く、トラクターのロータリーですき込むことも可能です。</p>
+        <p>枯れあがると繊維が固くなるためつぶしにくくなります。</p>
+      </div>
+    </div>
+    <div class="qa-card" style="grid-column: span 1;">
+      <div class="qa-question" style="background:#3d3f5a;">連作障害は？</div>
+      <div class="qa-answer">
+        <p>非常に強い吸肥力を持つ性質のため、特定要素欠乏が想像できることから連作は避けたほうが良いと思われますが、3年程度の栽培では問題ないという農家もいます。</p>
+      </div>
+    </div>
+  </div>
+
+  <p style="text-align:right; margin-top:20px;">
+    <a href="plant-physiology.html" class="page-link-btn">生理生態のページへ <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></a>
+  </p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-sns">
+    <a href="https://www.facebook.com/ace8.greenpapayas/" target="_blank" rel="noopener" aria-label="Facebook">
+      <img src="images/e316f544f9094143b9eac01f1f19e697.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/ace8papaya/" target="_blank" rel="noopener" aria-label="Instagram">
+      <img src="images/8d6893330740455c96d218258a458aa4.png" alt="Instagram">
+    </a>
+  </div>
+  <p>&copy;2020 Aces And Eights All rights reserved.</p>
+</footer>
+
+<a href="#top" class="back-to-top" aria-label="トップへ戻る">
+  <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 24l8-8 8 8" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </svg>
+</a>
+</body>
+</html>

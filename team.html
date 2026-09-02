@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>チーム | Aces And Eights</title>
+<meta name="description" content="本州青パパイヤ普及プロジェクトには複数の企業が参画しています。">
+<link rel="icon" type="image/png" href="images/a40240_9505b2e930d043dbb5f194c75a3b9950.png">
+<link rel="apple-touch-icon" href="images/a40240_9505b2e930d043dbb5f194c75a3b9950.png">
+<style>
+:root {
+  --navy: #243c64;
+  --accent: #3d65a9;
+  --bg: #7f97cc;
+  --footer-bg: #cfdbee;
+  --text: #222222;
+  --max-width: 980px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  color: var(--text);
+  line-height: 1.8;
+  background-color: var(--bg);
+  background-image: url('images/team_wave_bg.avif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+header.site-header { background: var(--navy); color: #fff; position: sticky; top: 0; z-index: 100; }
+.header-inner { max-width: var(--max-width); margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: bold; font-size: 20px; text-decoration: none; color: #fff; white-space: nowrap; }
+.logo img { width: 44px; height: 44px; }
+nav.main-nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+nav.main-nav a { text-decoration: none; color: #fff; font-size: 14px; padding: 6px 4px; white-space: nowrap; }
+nav.main-nav a.active, nav.main-nav a:hover { border-bottom: 2px solid #fff; }
+main { max-width: var(--max-width); margin: 0 auto; padding: 40px 20px 80px; background: transparent; border-radius: 8px; }
+h1.page-title { font-size: 38px; color: var(--navy); text-align: center; margin: 0 0 40px; }
+h2.section-title { color: var(--navy); margin: 50px 0 20px; font-size: 30px; text-align: center; }
+.content-block { font-size: 16px; }
+.content-block > p { margin: 0 0 1em; }
+.content-block a { text-decoration: underline; }
+.content-block img { margin: 20px auto; border-radius: 4px; }
+
+.callout {
+  display: block;
+  color: var(--navy);
+  font-weight: bold;
+  font-size: 1.15em;
+  margin: 1em 0 0.4em;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.image-row img {
+  margin: 0;
+  max-width: 100%;
+  flex: 1 1 220px;
+  width: auto;
+}
+
+.info-box {
+  border: 3px solid #a9c6ec;
+  box-shadow: 8px 8px 0 rgba(36,60,100,0.25);
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin: 24px 0;
+  background: #fff;
+}
+.info-box h3.sub-title {
+  color: var(--navy);
+  font-size: 21px;
+  margin: 0 0 14px;
+  border-left: 6px solid var(--accent);
+  padding-left: 12px;
+}
+.info-box p { margin: 0 0 0.8em; }
+.info-box ul { padding-left: 1.4em; margin: 0 0 0.8em; }
+.info-box ul li { margin-bottom: 6px; }
+.info-box img { margin: 16px auto; }
+.info-box .image-row { margin: 16px 0; }
+
+footer.site-footer { background: var(--footer-bg); padding: 40px 20px; text-align: center; }
+.footer-sns { display: flex; justify-content: center; gap: 10px; margin-bottom: 12px; }
+.footer-sns img { width: 40px; height: 40px; }
+footer.site-footer p { font-size: 13px; color: var(--navy); margin: 0; }
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #e607cf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 200;
+  text-decoration: none;
+}
+.back-to-top svg { width: 20px; height: 20px; }
+.page-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--navy);
+}
+.page-link-btn svg { width: 16px; height: 16px; }
+.dl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px;
+  padding: 10px 20px;
+  background: #3d65a9;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.dl-btn svg { width: 14px; height: 14px; }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 30px;
+  margin: 20px 0;
+}
+@media (max-width: 640px) {
+  .team-grid { grid-template-columns: 1fr; }
+}
+.team-card { text-align: center; }
+.team-card img { max-width: 220px; max-height: 90px; width: auto; height: auto; margin: 0 auto 16px; object-fit: contain; }
+.team-card h3 { font-size: 17px; font-weight: bold; color: var(--navy); margin: 0 0 10px; }
+.team-card p { font-size: 14px; font-weight: bold; margin: 0; text-align: left; }
+</style>
+</head>
+<body id="top">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <img src="images/a40240_9505b2e930d043dbb5f194c75a3b9950.png" alt="Aces And Eights ロゴ">
+      Aces And Eights™
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">青パパイヤとは？</a>
+      <a href="plant-physiology.html">植物生理と生態</a>
+      <a href="grow-guide.html">栽培方法</a>
+      <a href="home-garden.html">家庭菜園向け</a>
+      <a href="variety.html">品種紹介</a>
+      <a href="pop.html">POPダウンロード</a>
+      <a href="about.html">A&8について</a>
+      <a href="team.html" class="active">チーム</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title">チーム</h1>
+  <div class="content-block">
+  <div class="team-grid">
+    <div class="team-card">
+      <a href="http://www.bona.co.jp/" target="_blank" rel="noopener"><img src="images/a40240_2a51318240414f859e32f6c37388e628.avif" alt="ボナフィオリア ロゴ"></a>
+      <h3>有限会社 ボナフィオリア</h3>
+      <p>花・野菜・花木・果樹などを専門に扱う会社です。オリジナリティにあふれたデザイン・品質にこだわった商品を提案、全国のホームセンター・園芸専門店へ卸します。</p>
+    </div>
+    <div class="team-card">
+      <a href="http://www.wakabaseed.com/" target="_blank" rel="noopener"><img src="images/a40240_a6df116dde2e4f32a8a37b672cd4d143.avif" alt="わかば種苗店 ロゴ"></a>
+      <h3>有限会社 わかば種苗店</h3>
+      <p>沖縄県那覇市の種苗会社、創業70年以上に渡り沖縄県の農業をサポートしてきました。パパイヤは家庭菜園用から営利農家品種まで幅広い品種と栽培ノウハウを持ちます。</p>
+    </div>
+    <div class="team-card">
+      <a href="http://www.h-and-l.co.jp/" target="_blank" rel="noopener"><img src="images/a40240_b6aedf5b88204d9680eeb761ec90af87.avif" alt="H&amp;Lプランテーション ロゴ"></a>
+      <h3>有限会社 H&amp;Lプランテーション</h3>
+      <p>長野県(Hiland) 愛知県(Lowland) の2拠点農場にて草花・野菜・多肉植物苗の企画・生産を行う会社です。パパイヤは苗生産・栽培比較試験などを行っています。</p>
+    </div>
+    <div class="team-card">
+      <a href="https://hanagokoro.co.jp/" target="_blank" rel="noopener"><img src="images/a40240_0c5fa60518374125832b70ca66e57ca6.avif" alt="花ごころ ロゴ"></a>
+      <h3>株式会社 花ごころ</h3>
+      <p>「失敗しない。失敗させない。」用土・肥料メーカーです。70年の実績と経験をベースに、植物のある暮らしを応援します。青パパイヤでは家庭菜園を中心に本州栽培での効果的な肥料設計をサポート。</p>
+    </div>
+  </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-sns">
+    <a href="https://www.facebook.com/ace8.greenpapayas/" target="_blank" rel="noopener" aria-label="Facebook">
+      <img src="images/e316f544f9094143b9eac01f1f19e697.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/ace8papaya/" target="_blank" rel="noopener" aria-label="Instagram">
+      <img src="images/8d6893330740455c96d218258a458aa4.png" alt="Instagram">
+    </a>
+  </div>
+  <p>&copy;2020 Aces And Eights All rights reserved.</p>
+</footer>
+
+<a href="#top" class="back-to-top" aria-label="トップへ戻る">
+  <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 24l8-8 8 8" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </svg>
+</a>
+</body>
+</html>
