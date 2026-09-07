@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://ace8.net/</loc>
     <lastmod>2026-09-03</lastmod>
@@ -8,9 +9,18 @@
   </url>
   <url>
     <loc>https://ace8.net/plant-physiology.html</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://ace8.net/images/papaya-video-thumb.jpg</video:thumbnail_loc>
+      <video:title>青パパイヤの果実から出るラテックス（パパイン酵素）</video:title>
+      <video:description>青パパイヤの果実表面を傷つけると分泌される乳白色のラテックス（パパイン酵素）の様子を撮影した映像。</video:description>
+      <video:content_loc>https://ace8.net/video/papaya.mp4</video:content_loc>
+      <video:duration>42</video:duration>
+      <video:publication_date>2026-09-01</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
   <url>
     <loc>https://ace8.net/grow-guide.html</loc>
